@@ -35,6 +35,7 @@
   .cta:hover{background:var(--gold-soft)} .cta:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px}
   footer{position:relative;margin-top:44px;color:#7A8BB0;font-size:.82rem;line-height:1.7}
   footer a{color:#9FB4E0;text-decoration:none} footer a:hover{text-decoration:underline}
+.kind-tag{display:block;text-transform:uppercase;letter-spacing:.3em;font-size:.76rem;font-weight:700;color:var(--gold);margin-top:2px}
 </style>
 </head>
 <body>
@@ -46,6 +47,7 @@
 <main>
   <img class="globe" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABjCAMAAABT0vWkAAAB/lBMVEWYnZ7Z496bkWNoluFhZGU1WKOhuOJppe9gaKpshaur2vdpk975+/qfrvQoN1lVbqABAf07TGpsmODm3KZXbp1LcseEeVNpm6sA//85dLRXcaGnoGGk0fHGtXKlo6c7acellWQgbnhhUyzBvKaQseS9wbJZX2ZadcuMs+qkz/ak0PXw67AzMi8mL2Z7+P+jl2oxLi96dihUe8tqhLLi6NAnNmA2SHQvc+h6xPtWYHNWfMd7gXv//wDQ4tk3VpVNWXRwjLyioZWy7rLbuZwfOZxhPjdYSyqIdz60amqIflujp53TtFP//3/UwXfq4rXHxaw1IgA2SnQ/ZqpLPA9QSji/fz+Cd07/AADQiwAAAABWdrFxldNRZ5FoistzpvFqmetKaaxPeMuPt/drhbSHqe1bhM/1/fhje6y6tIuqx/izqHNYiOe3uappd5DDu47NxZbKyKqx1/2UxfuMpdPV+P40SHFbcpo3VZPr6MtJWHVFW4rX0q5+fn5/f/95tfiDm88AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACtmr7pAAAAgHRSTlP9/fvw+v36Eg38+6MFD/yiAf5g/dv2/g8BB2ATG/4H/1sI+v9d/xEgqGisFv8XAqgTEVdflmefDP9jlv8BX5+hlW8EGgYcr/8DlJwTAv1jrENndYN+BGIBCwD+/v7+/v79/v7+/v7+/v7+/v7+/v7+/v7+/v78/v7+/v7+AgL+/nnV4X0AABLQSURBVHjapZoHW9vKtoZly3IHDJhACISwIXXf1N3L2fX0dnuZGUkzkjwYRzbYMtixAfPX77dGNoH0nDNPKAGz3ll9zcgWe886LdLnT3/9+fHj7PPn2WzWdesLC+vFm/S70+r7/pxZ7/51leQUfv7zfnZzk8R/1+m46aoDgt/dOP1nANUzxuZ2bWv/YPO5ZZU6fOB2skYJs3IL66fvRbwDcFqAaf71XIj9v21aEee82Wx2BoOZDrnRKOfmHt8A4vt/CFAl8X3heZ5lWc0oiprp4oNBShgRIps1iI8HnP6Vzd3L973piqKXhCkidy03yl3L/iGb+9MN9sf//UjAHGN/z5T7nhCXCTMICKkvxrkcOLnsLezoowC/sLnPl5eXb59fAKYQkk4fvJTNgpHLjXNGk8d32NOPAPzCdjOQ3+0C8BIReZHrNt3FsWsQJqCw+yxUwOcbb9HBeqN7779YXj5pd7t9MV0EEJ7x7Xg8JEJzaiazruHjFvvvDwN8X2WfZ5a7+X6/3b4AEMJGkKYIl6eeeEnIGsIfPwjwKckngJRSnIvz8/MpQouGh0+CO0MCWFmk3iuEGx8AMPJPuvlGuvr9/nk/RXhhz/eFX5Zc8WbUtFA7qHrkZjZ6M8F6Tf5vMsuZRsNvNF4iUg38pOWbJe0EATUFUGIjHd5KIEC1esm/kN99KT0lpIByuTU1Fs9bRLAAKA0IkDOB9CqhlgJqq/h2+3Qqv7q3XL6QH2LRV0kGEr1yKAQi1eU8KkWGgAWp3+U6bu47InSsv6xNo/WsCPnFqQZUk9eMKncymZn8cLYaviSCCG3kmYkjTjlHNXZzc+qI7zoofCBY1vc3Z5WM3aRvrVqhIqL6wiopRAGaaVyW3zIqpAC/RMI7MDoXJeFZh4cHWFkDyKKQo86C8DO7aeTP/VRy69+yM6taEed8oAartdOb7NNMpjUTnyRJq9UyRpqqIJqdTgmV1S2JcwvyaaUEMCxTybPPD26wv7KztTkRDdyR+pZZSzIMPe66Cwz9L7PXClP5EJ60eq0kMSr4KcAzhH4pEtbh8uFVwvNsqWN13M6+BT+vsgVho4UoVbQqfjlMpK3th1X29z2IncrvtXpYrSRVwTepEKACuTyKYJ5ut3ty0r1CeJ4FZGAd3oKRCl6YUNKoBSvplScTX9jlDfYXOKDVmsrv9covAY1GqoGjhlhNYx4ATk4MYX9GMKY6zN4BoHcUImMm0raOjlo+ykDpCCmwlwn7PfJtAvG0UsIFoCGgQUQGokUAUuIAhEuIA6jA5o56wraF7+etTMtG1Yq4vcHKR0dJo9dLZvIzlwBpLoBjC9U8P0SxRT1JAUS4pIS1nz2FBjbqe4ljMz14u9NplkRtl+xvLN8zgMwMAISgVhN5HLUOVjrO5Syr3V0mQKoC1gzQtp7fYqtQdjAY8KZt5ZudUtRRusLutTL5VgbraLpmgPOmOxqNxzxuIolhJOXMz887amDtoyeBcJASUjtZB23rMWO2QMqUombFuid5p9SJxGdzVEBT+Xt7MwQI4TkagKt4UPLwGUu55GqFGBwimtJY3Z8uslDXen6D7fp80LSEV0EeKIRe3ma7PdQIGMcA0kWEVojyMybBFKJa4+vYVfgbpbiriHChglmoIG0LkSo0qrp271hPFwLsSyywB3m/EcL4ZKErBNQHdC83LUL4Oz4eu7PV7x62TcXYf4nYgY0K7F5IhAVmnd351o/ggl9flKEAWWjvCiDT4m5UmspzPE/rgOSP6L8D7sHk7QOzLgCwUfb/5mwBXRdOi9Yc2+hrKb3mcsvuZ/auLgKE0jsXU4ASWnuBGeuIwjWP9ncO06p3QbAOLOvPdrDiOGoOxe6stoF8CKVq9s+7y5nLwmmVM33P7/XSgUIpGi5s2v7YLWkMArzZpqbQnjp6CrGsRjBWcNJNVoUGu6HfytiBirCX5VcBCCPuhZme5u4A8QkfSJuPBp0BF34Y+h4HRQirvd89JMBBKr/vDZUFE60yMtH9UPYy8Yqr8ieby6/Yp9wLWw0/0zvyRZOKI9qljOG9ptZ+WC4nAm4XZvLIU74dHJpYtWwAIljzMwN4ECZHGRkolV8+vALIUJrRPnuoftQSCOD5Opaeh0pGgFCfo2nj37k1AyCTrYY3xP61/ImtWuzTfG/vqOcjWPGa5Ss+pvbjJw0/nMhegpYWqNJESo0yMylPpIHrRj7t3LcPYSADaD/vN1aUxwNP2vAB2+gd7ZUbYcwD629XTJR5gdWXME6Eupj4Ipk46mtfBT4BBCa9yMYYYDRoyH77ADq02wBY/ZBzGyHGxQaa/n14MpGhz4Noc/NktnUj/cWLjC3tyK1H8CiqeyI0Wock84RehBIpQhGQD6jSko0AaLd3rDBUMl7xOG8Q4MFeItF0fU/p7Gb3xVQwfWDtQVjkolRR0/cnEy+Vj+qK2aUzEKGnG7PRhiLVAPoJDi4IaT0WuwB8fiT9JJS2r1aszRNsPZPuP2MAkgAmVCgDdOCLAF8jyPek64pQ8rCVz5MfGvnu7S4B2jTVIgukVtE9Zv1SDoOvy8nE/lo71uGJEWvsk34HQOBqkh+h2LnQoDRwB83IjRoN7XqhH4QkHv8a/dsXgFgHSgdBAC9bcwSwbd+e2E502M2cpIBUkUwL1gt42A8BiPiA43XUe3DU8fLYvZ4kQT+P2abVQrG/jcpKAF/GEM4DGUv7U6tWLuskcrSQkxXVPjghwMmLmZND6WstoD4BIvIDGrjAd5HAeAAzJdqj6Yk+8mg+tyE/L6GBQopLHdsIU/sIf+YgGMLAsQ66LwGkDPYfaApFzKZwgp8CIL6E+SMMvAA2wu5JAzTDE1Jgp4Gde8cB6YE+abGlBDHEV7hI5Fbz4JAIZvPUbzMS2auDpjQ9X9j+BHmNaYEOC9i0pwM5CdDG8T0125PbqYWkdI9jKbHrdWatFRHUAg3Q88MVBRW6J8vGx5DfLUvP4TEs0RDSAEKkr9+wwWhleplGEMRhEGYw2JeTzF7GyM8DoI+dGI727IdrVoFVkjIBAi/RTnRAI9tMfrfhBY4AwBPnMs0EaODTqNenEMhrHU+0OCJA2NrLkPxug4LUCTSajL/LCtYjNheWJ+iaUGGyZVSAlU6M/K70AuXH1AT6NBFRClMWN0LRSGNMx74gL7fySZghwG2ykHAD9CUZ+1U0HHbG8EtOPVwkegst8PZ+uwv5Ozs7eam3AhkISTWfLGQWFTdqEb1Wxrd9hFmYN1N4ngDdPH7GKUp1HN+DcIsV2P0kDKj/YIdbEdIdk8eLk+5Otw0FtuKYAJrqTSqfzDTRcAH8mo8nADRMkIZlAMo7ZCFuY0yWgb1bKwDwiG2g6jounCBRkNvUkXAG7+4cEACKNukUjlQzAJn6IQ3+TCvGTzyJYgEATHQ7Y1wcxSj+ceBVcfq36BrDRkseBwIqyC1rn3rsTndn3ypJHaxI3fTouNwXegaYhFyUIRORKalOCrIQ/bebNwCUrkAFK0EFFiJAgS0BMNT4BWwUtLMWnNCFfO3jVTZvphcVIqA6KvwJHO3kacFGDdQO6eVNvcujwxoFmlIgKAP92fQQeMYKSNih58NuE72VxxEe3rIsbqOPaluVSiW0V0/E2C0SGo0yDhKSX25lQvQL6VFBhZczpIAt+RQQFOhkSafMIqugtIoQ1REqCJxMaRYpcVvAQrELQAQVBCoApghdLsvAz+N4DkYZdQeARovk59v5/MSWoql8qXkQV2CbGWDJ16g10kUu6ABnX8hHxYcLAhTrEucgwH4yiAUKaGAHVJD6huEToN8yfVnKhu9hD83Q9vRKvHQBqLGCQH/jEMalDDyLzrs4PUC+RsCVeLpg3hh+Qv4AEOG4SQi4XdrC3GwgPkONDt4USYxlF9Yu7irIRkgEXyhXY9sAdNAROfLFjtVUPFeQFduRiPFFRgCU0hsMJEJEqHNpoyRKNIt7YSxjKHB2AVhlBYmpSoumC0IQZTt0X0CAOHBT8U2u5ASVgQBxLMhHVEEwJkFn3jeXPr7v2V7TW7g/IcDdSwAczG06Xdil5lihClo5unQiQKBSAAzmIoh4oGEh5DY2PL1ogz5bHPIB8+0Y8qPiA2hqV1L5U8AZW4KHlb0e4ayBPtEZY8AlwJYaTC3U6SDEAIjhArjpfAYQPgB0VwJjacj3FqoJWqVcqn11CXDK7krUu+BZPcJZTAcch7IRAVaMAnQHGM0AsGGA9lmizonw9WzUBbrT830jPyr+BgDfvpve5swupNAVoAL/9k7UGY2ClODyYMsAmlGTrm4iiFBIOakCMhpBSiWPKwAgX05ij9LlM/bAR4VKk+AloFh75sPNnH0TdXIjABSOGDxwyAWD9GKoQwAo5aEV8otV4mM4ymvKiR3Q/hcwiiJe5d1XALXab6n98mfsR6u+CAKOeaMUkMovdToDRMlrABwNnS3FZ/KjQvU+LCSnSXDpzu6MVSbY+AJjuVI9d4wjAA40gQOKG6Xi3QEsSwDbCegKeCp/oJSjJCILRTeKUN0ehFBgmgRXAEVfYJopsie5UocI7tAFYHE0KBkAjnxCUvHAq7xS8wLASU+tV5reuRWts9O5Fg34BVZ99dYRbsbcyZfW2HauA0LAh45acRdzuQ7s36ljbkS586g6KT24SG9FejrBSjOC/M+QsvcTFNgLF18B3IUKvMLusqUo1xnluFBDJ5dbzM3nLPNMou55F4DBID3zI9gweDiKwqxUYcXq9bK0tSyw4uv3pmfMRpToIitUKyDkRubAPRjlFudH6UMPADTmPIcGdwKoMWK5ifNqXUF+JJdOC2v3W8iUCvrw64ACeyZFQNtgN0HIdcbYGUrG+Dg3P5qe8wN4SacA85CCI565GuL0hfJODmAPGjGHAoU33fySCmjWxRoC4PqPOdQjABQt99gQ4E+MmAEBkGKdyKNaxSNvBS2k/sM2q66uFRJP68pLA10BwAvSo+uFVXoA8rtcLlenG92ROx4OzcGeNowtO7xE8juUzp2OSULrG/P3pEAABWqFN99dU1uA44q1U7a9zdh/5cwDlE/+hdbi4iKqE4qrchzeyaUrlX5w8Pgpq17fZqvVQujRRD33lsvxs7UiXaaQCuaZzJPfp4hRbh6I+cWcC4ALz5gfXzMXvXQ1O3uCM8fuQQFRODt92+17ga0L5H4xteEThsqU+wSicsSYX1x0OZw+dNxr10g8XT5tbu6XrrPqVP5S6CmxdEWBV673C2g8pMLUSRvsnj/AZs3DGiwCwCGDPxDAsuh+K/+1zdLb6lrht3kocNVArwIwIlH3X58SCqe7k9gdjz6ZLsTUaDQcup+k0GwpwuF8nV2fenApkUrMVc/e9YACUx4CyS2ebqeddM6P1TBY/7f//D3kX+ugxC4OnRIJ/9P/PC14UT+Ji2ldO4OHG1q/YqDXn4AgksxN2Pb0ed09ny+qCt3V37h1i7rEojOs37phHkMseVE4sadlDX8Y2vpSEXoL4PSsgDloMDVSobbrB8Ox3nhyh/67guIAwIJ54Z0NzDCh/4x9NfVw4jn2RnHtfQ+JUIuggnvndM3E6lxDjxf5En789HdP7SngRvF7kohxciLT6eSserfhH/M5dvb+x1zX2boxknHdI3ZPuovKTgNxRQ1Hi8eO+R1MgobvTy2EYh8Oh0tTf7/nSeB1toDh+Jl58Ry776vFsUflq3YZ8Kg2h9PyrLkjNspqfuEN8t8EWCvO1RUPviJ1z9gGvLyI6KbsrqvF0TEBHoJcwSyE3kvOAr7sHS9Ui7UPe5Z5ylbR/1e26fU4IurxsatNBa6rYyw4uUjPUDBrSfsRXHX26Kuy7fDVNz4ufePTWNQKpQKjMY6IUgHwE/5TSwHQoFgkBTDV0YCI2vkgcXDcWP3w58lwNAj/ga+pjdAKcFzZrjtTwN01DPxelFroEauUlV663ATe/0QcjgZh3RDyNuKI19lZURnA0EHfrtANlbQRzORgHlReD9B3AmoPQaCidL3AdiVfTAuUGhoNnF/ZUr8vIs/GIYbkR8j16x/5poHt2s26IawWN4SGidzB6sMhabDoHLMNOpdHOi4UMZeXhVO/+VX1Y9/2cMqKdVTPBURGRZfoAXL02bEzJAvN7/Zpetc45rGNSiKG9dW3vmfgHe+rQCihvaj6OvYbmGE6AmDoOPPzNGRFOEfCPHYqv/iPvDMEhPoI/aW+TtM2vXVjHgQDgIMx4+uK7SdCvVP+O9/bAsKPi8NjR40xnERC8Pl5yAeg6adP+aXEuXHhnfLf/eYZGPabYxCGY5q1uZqHCuPj+XmXm3kpoMPN+tvfs/EBb/9Zq7E7Xx4fKwyMJRWMocGYAMfkipVAO84PRba99s+8v4i0f/jFlyrAVMlJND7weQynKOeHL7bZO83zIQC2Tb3sycMvvvgSg8sxzRbIhS+//PcvHj4h/vvev8T+H13Vf51Pm1+eAAAAAElFTkSuQmCC" alt="OneGoodDeed globe">
   <h1>OneGoodDeed<span class="com">.com</span></h1>
+  <span id="kindTag" class="kind-tag">always be kind</span>
   <div class="tag">Watch kindness ripple across the world</div>
   <span class="soon">Launching soon</span>
   <p class="body">One good deed a day, rippling across a live world map. We're building it now —
@@ -55,5 +57,41 @@
 <footer>
   © 2026 OneGoodDeed.com · a member of <a href="https://bringmesunshinegroup.com">BringMeSunshineGroup.com</a>
 </footer>
+
+<script>
+(function(){
+  var K={en:"always be kind",mi:"kia atawhai tonu",fr:"soyez toujours bienveillant",es:"s\u00e9 siempre amable",
+  de:"sei immer freundlich",it:"sii sempre gentile",pt:"seja sempre gentil",nl:"wees altijd vriendelijk",
+  sv:"var alltid sn\u00e4ll",nb:"v\u00e6r alltid snill",no:"v\u00e6r alltid snill",da:"v\u00e6r altid venlig",
+  fi:"ole aina yst\u00e4v\u00e4llinen",pl:"b\u0105d\u017a zawsze \u017cyczliwy",cs:"bu\u010f v\u017edy laskav\u00fd",
+  ro:"fii mereu bun",hu:"l\u00e9gy mindig kedves",el:"\u03bd\u03b1 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c0\u03ac\u03bd\u03c4\u03b1 \u03b5\u03c5\u03b3\u03b5\u03bd\u03b9\u03ba\u03cc\u03c2",
+  tr:"her zaman nazik ol",ru:"\u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u0443\u0434\u044c \u0434\u043e\u0431\u0440\u044b\u043c",
+  uk:"\u0437\u0430\u0432\u0436\u0434\u0438 \u0431\u0443\u0434\u044c \u0434\u043e\u0431\u0440\u0438\u043c",
+  ar:"\u0643\u0646 \u0644\u0637\u064a\u0641\u064b\u0627 \u062f\u0627\u0626\u0645\u064b\u0627",
+  he:"\u05d4\u05d9\u05d5 \u05ea\u05de\u05d9\u05d3 \u05d0\u05d3\u05d9\u05d1\u05d9\u05dd",
+  hi:"\u0939\u092e\u0947\u0936\u093e \u0926\u092f\u093e\u0932\u0941 \u092c\u0928\u0947\u0902",
+  th:"\u0e21\u0e35\u0e40\u0e21\u0e15\u0e15\u0e32\u0e40\u0e2a\u0e21\u0e2d",vi:"lu\u00f4n t\u1eed t\u1ebf",
+  id:"selalu berbaik hati",ms:"sentiasa berbaik hati",fil:"laging maging mabait",tl:"laging maging mabait",
+  ja:"\u3044\u3064\u3082\u89aa\u5207\u306b",ko:"\ud56d\uc0c1 \uce5c\uc808\ud558\uac8c",
+  zh:"\u5e38\u6000\u5584\u610f",zhh:"\u5e38\u61f7\u5584\u610f",sm:"ia agalelei pea"};
+  var RTL={ar:1,he:1};
+  function pick(langs){
+    for(var i=0;i<langs.length;i++){
+      var l=String(langs[i]).toLowerCase();
+      if(l.indexOf("zh")===0){return {t:(/tw|hk|mo|hant/.test(l)?K.zhh:K.zh),l:l,r:0};}
+      var p=l.split("-")[0];
+      if(K[p]) return {t:K[p],l:p,r:RTL[p]||0};
+    }
+    return {t:K.en,l:"en",r:0};
+  }
+  function apply(langs){
+    var el=document.getElementById("kindTag"); if(!el) return;
+    var m=pick(langs||navigator.languages||[navigator.language||"en"]);
+    el.textContent=m.t; el.setAttribute("lang",m.l); el.setAttribute("dir",m.r?"rtl":"ltr");
+  }
+  window.__kindTag={set:apply};
+  apply();
+})();
+</script>
 </body>
 </html>
