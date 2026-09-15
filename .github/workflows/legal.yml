@@ -1,0 +1,13 @@
+name: Central legal conformance
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  legal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/legal/verify.py
+      - name: Production legal release is adopted and effective
+        if: github.ref == 'refs/heads/main'
+        run: python3 tools/legal/verify.py --release
