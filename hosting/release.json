@@ -1,0 +1,8 @@
+{
+  "service": "ogd-public-site",
+  "version": "1.0.0",
+  "domain": "onegooddeed.com",
+  "staging_domain": "ogd-public.stg.bringmesunshinegroup.com",
+  "forms_contract": "v1",
+  "contact_client": "1.0.0"
+}

@@ -1,0 +1,17 @@
+name: Independent public website image
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build public assets from this checkout only
+        run: python3 hosting/build.py
+      - name: Build independent image
+        run: docker build --network=none -t public-site:verify .
+      - name: Validate browser scripts
+        run: node --check contact-v1.js
