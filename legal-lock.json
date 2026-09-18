@@ -1,23 +1,23 @@
 {
   "contractVersion": "1.0.0",
-  "release": "2026-09-15.1",
+  "release": "2026-09-18.1",
   "status": "adopted",
-  "effectiveFrom": "2026-09-15T08:09:44Z",
+  "effectiveFrom": "2026-09-18T01:56:36Z",
   "approval": {
     "by": "owner",
-    "recordedAt": "2026-09-15T08:09:44Z",
-    "instruction": "Accepted the legal pair with postal address; selected option 3: publish to production now, with outstanding items documented.",
-    "scope": "Central legal documents and independent public holding-site copies; no service, banking or payment activation."
+    "recordedAt": "2026-09-18T01:56:36Z",
+    "instruction": "Move the contact-message notice into main BMSG Terms and Privacy pages, link the contact form, and remove the separate BMSG staging contact-privacy page.",
+    "scope": "Consolidation of existing contact disclosures and receipt/screening explanation; staging deployment in this task. Production rollout remains separate."
   },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "c70d92add042b759ac742ab218c24ba0b70b19643dfb7726e9b6e42a7d4ceecc"
+      "sha256": "70f4d0ae6fc82835b2aea6f146e29d07efe091da2a75b39adc417cd94f8b3da9"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "55a701a3eae12aa15b37ebb18494fec4899ccaeb749ca0b48f89eccd5d2b5b06"
+      "sha256": "c950cff7cd965237ebad83a583b7a84717bf6d16bb639c9ebb974720a40c56d0"
     }
   },
   "assetIds": [
@@ -36,16 +36,17 @@
     {
       "path": "privacy.html",
       "kind": "privacy",
-      "sha256": "69b601a0c268cf0f028aa2bd340a7f49b7d44b0dfc36a7b692f6b8db67568a34"
+      "sha256": "efae992ccca2307c434e34955610f41ba43a9c16ae742a8f62b46bba7fcc275e"
     },
     {
       "path": "terms.html",
       "kind": "terms",
-      "sha256": "2ccce890239672997a5b6109ccb7f3d61ea4685005f4644aaba805706d799027"
+      "sha256": "d73aa2311a041095ce591de081b0a582e44ebddc50841feaec77233d3213c980"
     }
   ],
   "linkSurfaces": [
     "index.html",
-    "donate.html"
+    "donate.html",
+    "contact.html"
   ]
 }

@@ -1,6 +1,8 @@
 {
   "linkSurfaces": [
     "index.html",
-    "donate.html"
-  ]
+    "donate.html",
+    "contact.html"
+  ],
+  "preserveWrapper": true
 }

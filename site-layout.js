@@ -1,0 +1,1 @@
+if(location.hostname.includes('.stg.')){document.querySelectorAll('[data-environment]').forEach(e=>e.hidden=false);document.querySelectorAll('a[href]').forEach(a=>{const u=new URL(a.href);if(u.hostname==='bringmesunshinegroup.com'&&['/privacy.html','/terms.html'].includes(u.pathname))a.href='https://bmsg-public.stg.bringmesunshinegroup.com'+u.pathname+u.hash;});}

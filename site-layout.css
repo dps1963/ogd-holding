@@ -1,0 +1,15 @@
+/* Shared presentation additions; each site's existing index.html remains the shell source. */
+:root{--contact-accent:#f4a836;--contact-paper:#fdf8ef;--contact-text:#232a26}
+.contact-link{display:inline-flex;align-items:center;justify-content:center;background:var(--contact-accent);color:var(--contact-text);border-radius:999px;padding:.7rem 1.4rem;font-weight:700;text-decoration:none;min-height:44px}
+.site-subpage{min-width:0;overflow-wrap:anywhere}.site-subpage main{width:100%;min-width:0}.contact-page{margin:0 auto!important;max-width:none!important;display:block!important}.contact-page .banner{padding:clamp(3rem,8vw,5rem) clamp(12px,4vw,40px)}
+.site-subpage [data-environment]{background:#fff0bf;color:#352300;width:100%;padding:.5rem;text-align:center;font-weight:600}
+.product-header{position:relative;width:100%;max-width:68rem;margin:0 auto 2rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem}.product-home{display:flex;flex-direction:column;align-items:center;gap:1rem;color:inherit;text-decoration:none}.product-home h1{font-size:clamp(1.5rem,5vw,2.5rem)}.product-header nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1.5rem}.product-header nav a{color:inherit}.product-header nav .contact-link{color:var(--contact-text)}
+.site-subpage:not(.bmsg) .contact-page{max-width:44rem!important}.site-subpage:not(.bmsg) footer{width:100%;padding-top:2rem}.legal-page{display:block!important;text-align:left;max-width:68rem!important;margin:2rem auto!important;padding:clamp(12px,4vw,40px);background:var(--contact-paper);color:var(--contact-text);border-radius:1rem;line-height:1.7}.legal-page h1,.legal-page h2{color:inherit}.legal-page h2{font-size:1.6rem;margin:2rem 0 1rem}.legal-page p,.legal-page ul,.legal-page ol{margin:1rem 0}.legal-page li{margin-left:1.5rem}.legal-page a{color:inherit;text-decoration:underline}.legal-page .notice{border:1px solid currentColor;border-radius:.75rem;padding:1rem;margin-bottom:2rem}.legal-page .table-scroll{max-width:100%;overflow-x:auto}.legal-page table{border-collapse:collapse;width:100%;font-size:.9rem}.legal-page th,.legal-page td{border:1px solid #87929c;padding:.65rem;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.bmsg.site-subpage header{position:relative}.bmsg.site-subpage footer{width:100%}.bmsg.site-subpage .legal-page{width:calc(100% - 2rem)}
+[data-delivery-confirmation]{max-width:44rem;margin:2rem auto;padding:2rem;border-radius:1rem;background:var(--contact-paper);color:var(--contact-text);text-align:left}[data-delivery-confirmation] h2,[data-delivery-confirmation] p{color:inherit!important;text-shadow:none!important;margin-bottom:1rem!important}
+@media(max-width:560px){.product-header nav{gap:.7rem}.legal-page{padding:1rem}.product-home .logo{max-width:100%}}
+:root{--contact-accent:#f0b23f;--contact-paper:#0e1b38;--contact-text:#eaf0ff}.contact-link{color:#0e1b38}.product-header nav .contact-link{color:#0e1b38}
+
+body{overflow-wrap:anywhere}main,header,footer,section,.inner{min-width:0;max-width:100%}a,button{max-width:100%}img,svg{max-width:100%}
+
+body.site-subpage{height:auto}

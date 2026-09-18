@@ -1,6 +1,7 @@
 from pathlib import Path
-import shutil
+import shutil, subprocess
 root=Path(__file__).resolve().parent.parent
+subprocess.run(['python3',str(root/'hosting/render-pages.py'),'--check'],check=True)
 out=root/'public'
 if out.exists():raise SystemExit('public already exists; use a clean checkout for an immutable build')
 out.mkdir()

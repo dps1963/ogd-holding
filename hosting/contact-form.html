@@ -1,0 +1,15 @@
+<form class="contact-card" data-contact-form data-brand="ogd" data-endpoint="" novalidate>
+
+<p>Questions, feedback and criticism are welcome. Please avoid sensitive personal information or details about children.</p>
+<label for="contact-kind">Message type</label><select id="contact-kind" name="kind"><option value="contact">Contact</option><option value="feedback">Feedback</option></select>
+<div class="contact-row"><div><label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" maxlength="100" required spellcheck="false" aria-describedby="name-error"><span id="name-error" class="form-error"></span>
+</div><div><label for="contact-email">Email for a reply</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required spellcheck="false" autocapitalize="none" aria-describedby="email-error"><span id="email-error" class="form-error"></span>
+</div></div>
+<label for="contact-message">Your message</label><textarea id="contact-message" name="message" rows="7" maxlength="3800" required spellcheck="true" lang="en" aria-describedby="message-error"></textarea><span id="message-error" class="form-error"></span>
+<div class="form-trap" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off" spellcheck="false"></label></div>
+<p>Your browser can check spelling. Spelling never prevents sending and your words are not rewritten.</p>
+<p class="security-note">Anti-bot check: this helps prevent automated spam. It does not approve your message; Gatekeeper checks the content after you send it.</p>
+<div data-challenge></div><button type="submit">Send message</button><p role="status" aria-live="polite" aria-atomic="true">Connecting to the contact service…</p>
+<p>Messages are screened by BMSG Content Guard (Gatekeeper), then handled by support. A receipt confirms secure storage, not delivery or a reply. <a data-contact-legal="privacy" href="https://bringmesunshinegroup.com/privacy.html#contact-messages">BMSG Privacy Policy</a> and <a data-contact-legal="terms" href="https://bringmesunshinegroup.com/terms.html#contact-messages">Terms &amp; Conditions</a>.</p>
+<noscript>This form needs JavaScript and the security check to send a message.</noscript>
+</form>

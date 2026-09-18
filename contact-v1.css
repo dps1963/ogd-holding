@@ -21,3 +21,14 @@
 
 [data-contact-form] .screening-warning{border:2px solid #b65300;border-left-width:6px;background:#fff3e0;color:#572900;border-radius:.5rem;padding:1rem;margin:1rem 0;line-height:1.6}
 [data-contact-form] .screening-field{border:2px solid #b65300;background:#fffaf2;box-shadow:0 0 0 1px #b65300}
+
+/* Homepage-matched card; validation states retain their own orange emphasis. */
+[data-contact-form]{background:var(--contact-paper);color:var(--contact-text);border:0;max-width:560px;padding:24px;border-radius:16px;box-shadow:0 10px 34px #0003;font:inherit}
+[data-contact-form] p{color:inherit!important;text-shadow:none!important;max-width:none!important;margin:.8rem 0!important;font-size:.9rem}
+[data-contact-form] input,[data-contact-form] textarea,[data-contact-form] select{border:1px solid #d8d5ce;border-radius:10px;padding:10px 12px;font:inherit;margin-top:5px}
+[data-contact-form] label{font:inherit;font-weight:600;margin:.6rem 0 0;color:inherit}
+[data-contact-form] button{background:var(--contact-accent);color:var(--contact-submit-ink,#172333);border-radius:12px;width:100%;border:0}
+.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-row>div{min-width:0}
+[data-contact-form] .screening-field{border:2px solid #b65300;background:#fffaf2}
+[data-contact-form] .screening-warning{color:#572900!important;background:#fff3e0}
+@media(max-width:560px){.contact-row{grid-template-columns:1fr;gap:0}[data-contact-form]{padding:18px}}
