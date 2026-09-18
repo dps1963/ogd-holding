@@ -24,3 +24,7 @@ a.contact-link{background:#f9a82d;color:#172333!important;border-radius:999px;pa
 .legal-page h4{font-size:1rem;margin:1rem 0 .5rem}
 .legal-page p,.legal-page ul,.legal-page ol{margin:.65rem 0}
 .legal-page .notice{margin-bottom:1rem}
+
+.landing-nav{position:absolute;top:1rem;right:clamp(1rem,4vw,3rem);z-index:5}
+body:has(>.landing-nav){padding-top:6rem}
+@media(max-width:560px){.landing-nav{top:.75rem;right:1rem}}
