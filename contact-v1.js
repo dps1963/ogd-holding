@@ -28,7 +28,7 @@
       rejected=result.status==='blocked';
       const labels={name:'Your name',email:'Email for a reply',message:'Your message',kind:'Message type'};
       const flaggedLabels=(result.flagged_fields||[]).filter(f=>labels[f]).map(f=>labels[f]);
-      say(`${result.message}${result.reason?" Reason: "+result.reason:""}${rejected?(flaggedLabels.length?" Field to review: "+flaggedLabels.join(", ")+". Edit the highlighted field and submit again.":" Screening did not identify a specific field, so none is highlighted. Review the wording or quote the reference to request a human review.")+" Automated screening can make mistakes.":""} Reference: ${receipt.submission_id}. Keep this reference and quote it to support when asking about this message.`);
+      say(`${result.message}${result.reason?"\n\nReason: "+result.reason:""}${rejected?(flaggedLabels.length?"\n\nField to review: "+flaggedLabels.join(", ")+". Edit the highlighted field and submit again.":"\n\nScreening did not identify a specific field, so none is highlighted. Review the wording or quote the reference to request a human review.")+" Automated screening can make mistakes.":""}\n\nReference: ${receipt.submission_id}. Keep this reference and quote it to support when asking about this message.`);
       button.textContent={checking:'Checking message…',accepted:'Message accepted',review:'Awaiting review',blocked:'Message not forwarded',delivered:'Message delivered'}[result.status]||'Message saved';
       return ['review','blocked','delivered'].includes(result.status);
     };
