@@ -18,3 +18,6 @@
 .contact-shell a{color:inherit}.contact-shell img{max-width:100%;height:auto}
 
 .contact-shell{overflow-wrap:anywhere;min-width:0}
+
+[data-contact-form] .screening-warning{border:2px solid #b65300;border-left-width:6px;background:#fff3e0;color:#572900;border-radius:.5rem;padding:1rem;margin:1rem 0;line-height:1.6}
+[data-contact-form] .screening-field{border:2px solid #b65300;background:#fffaf2;box-shadow:0 0 0 1px #b65300}
