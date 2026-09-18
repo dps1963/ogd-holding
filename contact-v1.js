@@ -17,7 +17,9 @@
       status.classList.toggle('screening-warning',['blocked','review'].includes(result.status));
       for(const name of ['name','email','message','kind'])form.elements[name].classList.toggle('screening-field',(result.flagged_fields||[]).includes(name));
       rejected=result.status==='blocked';
-      say(`${result.message}${result.reason?" Reason: "+result.reason:""}${rejected?" Review the highlighted fields, edit your message, then submit again. Automated screening can make mistakes.":""} Reference: ${receipt.submission_id}`);
+      const labels={name:'Your name',email:'Email for a reply',message:'Your message',kind:'Message type'};
+      const flaggedLabels=(result.flagged_fields||[]).filter(f=>labels[f]).map(f=>labels[f]);
+      say(`${result.message}${result.reason?" Reason: "+result.reason:""}${rejected?(flaggedLabels.length?" Field to review: "+flaggedLabels.join(", ")+". Edit the highlighted field and submit again.":" Screening did not identify a specific field, so none is highlighted. Review the wording or quote the reference to request a human review.")+" Automated screening can make mistakes.":""} Reference: ${receipt.submission_id}. Keep this reference and quote it to support when asking about this message.`);
       button.textContent={checking:'Checking message…',accepted:'Message accepted',review:'Awaiting review',blocked:'Message not forwarded',delivered:'Message delivered'}[result.status]||'Message saved';
       return ['review','blocked','delivered'].includes(result.status);
     };
@@ -45,6 +47,7 @@
     const response=await fetch(endpoint+'/api/v1/forms/config',{signal:AbortSignal.timeout(8000)});
     if(!response.ok)throw new Error();const cfg=await response.json();
     if(cfg.environment!=='production')document.querySelector('[data-environment]').hidden=false;
+    for(const link of document.querySelectorAll('[data-contact-legal]'))link.href=(cfg.environment==='production'?'https://bringmesunshinegroup.com':'https://bmsg-public.stg.bringmesunshinegroup.com')+'/'+link.dataset.contactLegal+'.html#contact-messages';
     if(!cfg.site_key)throw new Error();
     await new Promise((resolve,reject)=>{
       if(window.turnstile)return resolve();
