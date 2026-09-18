@@ -32,3 +32,9 @@
 [data-contact-form] .screening-field{border:2px solid #b65300;background:#fffaf2}
 [data-contact-form] .screening-warning{color:#572900!important;background:#fff3e0}
 @media(max-width:560px){.contact-row{grid-template-columns:1fr;gap:0}[data-contact-form]{padding:18px}}
+
+[data-contact-form]{max-width:616px;padding:24px;border-radius:18px}
+[data-contact-form] input,[data-contact-form] textarea,[data-contact-form] select{border-color:#e0d9c8;padding:12px;font-size:1rem}
+[data-contact-form] textarea{min-height:8rem}
+[data-contact-form] label{font-size:.95rem}
+[data-contact-form] button{padding:15px 12px}

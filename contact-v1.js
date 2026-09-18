@@ -3,7 +3,7 @@
   const form=document.querySelector('[data-contact-form]');if(!form)return;
   const status=form.querySelector('[role="status"]'),button=form.querySelector('button[type="submit"]');
   let endpoint; const brand=form.dataset.brand;
-  try { const response=await fetch('/contact-config.json'); if(!response.ok)throw new Error(); endpoint=(await response.json()).forms_endpoint; if(endpoint.includes('.stg.'))document.querySelector('[data-environment]').hidden=false; } catch { status.textContent='The contact service is temporarily unavailable.';button.disabled=true;return; }
+  try { const response=await fetch('/contact-config.json'); if(!response.ok)throw new Error(); endpoint=(await response.json()).forms_endpoint;  } catch { status.textContent='The contact service is temporarily unavailable.';button.disabled=true;return; }
   let widget,token='',key=crypto.randomUUID(),lastPayload='',busy=false,accepted=false,rejected=false,receiptGeneration=0,checkButton;
   const emailFormat=/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/;
   const say=text=>{status.textContent=text;};
@@ -55,7 +55,7 @@
   try{
     const response=await fetch(endpoint+'/api/v1/forms/config',{signal:AbortSignal.timeout(8000)});
     if(!response.ok)throw new Error();const cfg=await response.json();
-    if(cfg.environment!=='production')document.querySelector('[data-environment]').hidden=false;
+
     for(const link of document.querySelectorAll('[data-contact-legal]'))link.href=(cfg.environment==='production'?'https://bringmesunshinegroup.com':'https://bmsg-public.stg.bringmesunshinegroup.com')+'/'+link.dataset.contactLegal+'.html#contact-messages';
     if(!cfg.site_key)throw new Error();
     await new Promise((resolve,reject)=>{
