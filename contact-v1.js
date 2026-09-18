@@ -14,6 +14,15 @@
       const response=await fetch(`${endpoint}/api/v1/forms/submissions/${receipt.submission_id}/status`,{headers:{authorization:`Bearer ${receipt.receipt_token}`},signal:AbortSignal.timeout(8000)});
       if(!response.ok)throw new Error('status_unavailable');const result=await response.json();
       if(generation!==receiptGeneration)return true;
+      if(result.status==='delivered'){
+        receiptGeneration++;check.remove();token='';
+        window.turnstile?.remove?.(widget);
+        const confirmation=document.createElement('section');confirmation.setAttribute('role','status');confirmation.tabIndex=-1;confirmation.dataset.deliveryConfirmation='';
+        const heading=document.createElement('h2');heading.textContent='Message delivered';
+        const detail=document.createElement('p');detail.textContent='Your message has reached our support team. This confirms delivery, not that a reply has been sent.';
+        const reference=document.createElement('p');reference.textContent='Reference: '+receipt.submission_id+'. Keep this reference if you contact us about your message.';
+        confirmation.append(heading,detail,reference);form.replaceWith(confirmation);confirmation.focus();return true;
+      }
       status.classList.toggle('screening-warning',['blocked','review'].includes(result.status));
       for(const name of ['name','email','message','kind'])form.elements[name].classList.toggle('screening-field',(result.flagged_fields||[]).includes(name));
       rejected=result.status==='blocked';
