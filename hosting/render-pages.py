@@ -21,7 +21,7 @@ def render():
   contact='<main class="contact-page">'+section+'</main>'
  else:
   intro=match(r'<main>(.*?)<span id="kindTag".*?</span>',index)+match(r'(<span id="kindTag".*?</span>)',index)
-  header='<header class="product-header"><a class="product-home" href="'+home+'">'+intro+'</a><nav aria-label="Primary"><a href="'+home+'">Home</a><a href="'+home+'donate.html">Support us</a><a class="contact-link" href="contact.html">Get in touch</a></nav></header>'
+  header='<header class="product-header"><a class="product-home" href="'+home+'">'+intro+'</a><nav aria-label="Primary"><a href="'+home+'">Home</a><a class="contact-link" href="contact.html">Get in touch</a></nav></header>'
   contact='<main class="contact-page"><h1>Get in touch</h1>{{FORM}}</main>'
  def wrap(title,canonical,body,extra=''):
   h=re.sub(r'<title>.*?</title>','<title>'+title+'</title>',head,flags=re.S)
