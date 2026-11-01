@@ -11,5 +11,7 @@ server {
  location = /health { access_log off; return 200 'ok'; }
  location = /contact-config.json { add_header Cache-Control no-store; }
  location ~ /\. { deny all; }
+ location = /privacy.html { return 301 https://bringmesunshinegroup.com/privacy.html; }
+ location = /terms.html { return 301 https://bringmesunshinegroup.com/terms.html; }
  location / { try_files $uri $uri/ =404; }
 }
