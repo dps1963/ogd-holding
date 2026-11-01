@@ -1,9 +1,14 @@
 {
   "contractVersion": "1.0.0",
   "release": "2026-11-01.2",
-  "status": "draft",
-  "effectiveFrom": null,
-  "approval": null,
+  "status": "adopted",
+  "effectiveFrom": "2026-11-01T18:16:40Z",
+  "approval": {
+    "by": "owner",
+    "recordedAt": "2026-11-01T18:16:40Z",
+    "instruction": "adopt and publish 2026-11-01.2",
+    "scope": "Adoption and production publication of release 2026-11-01.2 on bringmesunshinegroup.com, onegooddeed.com, ourfamilyrocks.com and learntoreadreadtolearn.com through the release scripts. Owner rulings applied in this release (1 November 2026): asset schedule lists customer-facing websites only; 'Fold on T&C & privacy under bmsg keep contact as is. Give to go'; fold answer 'a'."
+  },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
