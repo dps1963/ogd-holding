@@ -2,6 +2,11 @@ from pathlib import Path
 import shutil, subprocess
 root=Path(__file__).resolve().parent.parent
 subprocess.run(['python3',str(root/'hosting/render-pages.py'),'--check'],check=True)
+# Legal release gate (1 Nov 2026). Fail closed: every image is built from public/, and public/ is only made here,
+# so a manual build.py -> docker -> release.py route cannot ship an unadopted or not-yet-effective legal draft.
+# CI preview builds that are never released set LEGAL_DRAFT_PREVIEW=1 explicitly.
+if __import__('os').environ.get('LEGAL_DRAFT_PREVIEW')!='1':
+ subprocess.run(['python3',str(root/'tools/legal/verify.py'),'--root',str(root),'--release'],check=True)
 out=root/'public'
 if out.exists():raise SystemExit('public already exists; use a clean checkout for an immutable build')
 out.mkdir()

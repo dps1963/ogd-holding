@@ -9,5 +9,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 tools/legal/verify.py
       - name: Production legal release is adopted and effective
-        if: github.ref == 'refs/heads/main'
+        # The served branch is codex/family-websites-20260917 (live), so it is gated like main.
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/family-websites-20260917'
         run: python3 tools/legal/verify.py --release
