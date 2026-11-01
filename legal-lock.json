@@ -1,23 +1,23 @@
 {
   "contractVersion": "1.0.0",
-  "release": "2026-09-18.1",
+  "release": "2026-11-01.2",
   "status": "adopted",
-  "effectiveFrom": "2026-09-18T01:56:36Z",
+  "effectiveFrom": "2026-11-01T18:16:40Z",
   "approval": {
     "by": "owner",
-    "recordedAt": "2026-09-18T01:56:36Z",
-    "instruction": "Move the contact-message notice into main BMSG Terms and Privacy pages, link the contact form, and remove the separate BMSG staging contact-privacy page.",
-    "scope": "Consolidation of existing contact disclosures and receipt/screening explanation; staging deployment in this task. Production rollout remains separate."
+    "recordedAt": "2026-11-01T18:16:40Z",
+    "instruction": "adopt and publish 2026-11-01.2",
+    "scope": "Adoption and production publication of release 2026-11-01.2 on bringmesunshinegroup.com, onegooddeed.com, ourfamilyrocks.com and learntoreadreadtolearn.com through the release scripts. Owner rulings applied in this release (1 November 2026): asset schedule lists customer-facing websites only; 'Fold on T&C & privacy under bmsg keep contact as is. Give to go'; fold answer 'a'."
   },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "70f4d0ae6fc82835b2aea6f146e29d07efe091da2a75b39adc417cd94f8b3da9"
+      "sha256": "84ed87e36b8e2639ddd8f8019fcebd7af5d63b41d75fdf7a0fb52f433634b7b2"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "c950cff7cd965237ebad83a583b7a84717bf6d16bb639c9ebb974720a40c56d0"
+      "sha256": "cfbf5dd0db59615d0b8aef5fd180392d38a215258d2d25826736bee1a7f9c4be"
     }
   },
   "assetIds": [
@@ -25,28 +25,29 @@
   ],
   "assetSchedules": {
     "ogd-holding": [
-      "WEB",
-      "GIVE"
+      "WEB"
     ]
   },
   "locales": [
     "en"
   ],
-  "pages": [
-    {
-      "path": "privacy.html",
-      "kind": "privacy",
-      "sha256": "00a4cc7840e0dbf2a27ce3f32fa4fc2efe1b0809840edabb4c7d06103e25e52e"
-    },
-    {
-      "path": "terms.html",
-      "kind": "terms",
-      "sha256": "fffc928e2314895b6196aaf64fc199d869804bd9468a3aced8c4687850eff0ad"
-    }
-  ],
+  "pages": [],
   "linkSurfaces": [
     "index.html",
     "donate.html",
     "contact.html"
+  ],
+  "redirectConfig": "hosting/default.conf.template",
+  "folded": [
+    {
+      "path": "privacy.html",
+      "kind": "privacy",
+      "target": "https://bringmesunshinegroup.com/privacy.html"
+    },
+    {
+      "path": "terms.html",
+      "kind": "terms",
+      "target": "https://bringmesunshinegroup.com/terms.html"
+    }
   ]
 }

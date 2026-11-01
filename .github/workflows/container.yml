@@ -10,6 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build public assets from this checkout only
+        # Verification image only, never released: allow a legal draft here. Release builds leave this unset,
+        # so hosting/build.py runs tools/legal/verify.py --release and refuses a draft.
+        env:
+          LEGAL_DRAFT_PREVIEW: '1'
         run: python3 hosting/build.py
       - name: Build independent image
         run: docker build --network=none -t public-site:verify .

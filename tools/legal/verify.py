@@ -44,6 +44,21 @@ def verify(root, release=False):
             errors.append(f'missing canonical link: {item["path"]}')
         if f'name="bmsg-legal-release" content="{lock["release"]}"' not in text:
             errors.append(f'version mismatch: {item["path"]}')
+    if lock.get('folded'):
+        config = root / lock.get('redirectConfig', '')
+        server = config.read_text() if lock.get('redirectConfig') and config.is_file() else ''
+        if not server:
+            errors.append('folded consumer: missing redirect config')
+        for item in lock['folded']:
+            canonical = lock['canonicalBase'] + '/' + item['kind'] + '.html'
+            if item['target'] != canonical:
+                errors.append(f'folded route must target the canonical page: {item["path"]}')
+            if (root / item['path']).exists():
+                errors.append(f'folded route still has a local copy: {item["path"]}')
+            if f'location = /{item["path"]} {{ return 301 {canonical}; }}' not in server:
+                errors.append(f'folded route has no 301 to the canonical page: {item["path"]}')
+    elif release and not lock['pages']:
+        errors.append('no legal routes: neither local pages nor folded redirects')
     for path in lock.get('linkSurfaces', []):
         text = (root / path).read_text() if (root / path).is_file() else ''
         for kind in ['privacy', 'terms']:
