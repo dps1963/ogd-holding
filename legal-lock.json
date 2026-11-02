@@ -8,11 +8,11 @@
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "acaecc2c2b60b0ffc0172aa553ef021e5eb396783989b9d216f4925e7a073120"
+      "sha256": "c5702a7e234573622dac5d973994e7a97fee0ea7827975eb0fa13373fd9744e1"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "c8ecac5213a31ddbf26673c7019b87c119abaa68562dcaea4b92da7a6304ef7d"
+      "sha256": "8e8a14d8f5161b437eae44d8f59bc6d95f102c282d2693d4d9c69d6f3c4d26c2"
     }
   },
   "assetIds": [
