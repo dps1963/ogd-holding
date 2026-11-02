@@ -1,18 +1,23 @@
 {
   "contractVersion": "1.0.0",
   "release": "2026-11-02.1",
-  "status": "draft",
-  "effectiveFrom": null,
-  "approval": null,
+  "status": "adopted",
+  "effectiveFrom": "2026-11-02T05:01:38Z",
+  "approval": {
+    "by": "owner",
+    "recordedAt": "2026-11-02T05:01:38Z",
+    "instruction": "8 do",
+    "scope": "Dave's reply \"8 do\" (2 November 2026) to item 8: Legal draft 2026-11-02.1 (Kindness Gate wording + \"BMSG Family Chat\"): needs \"yes rename Content Guard\" (recommended) and \"adopt and publish 2026-11-02.1\". Both are approved: 'BMSG Content Guard' is renamed the Kindness Gate in the legal text, and release 2026-11-02.1 is adopted and published on bringmesunshinegroup.com, onegooddeed.com, ourfamilyrocks.com and learntoreadreadtolearn.com through the release scripts (family-site privacy/terms stay folded, 301 to bringmesunshinegroup.com)."
+  },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "c5702a7e234573622dac5d973994e7a97fee0ea7827975eb0fa13373fd9744e1"
+      "sha256": "5bd60fcdd6cc5844eb910767ad14218fff8f4d182ea3117605321c14711b4c91"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "8e8a14d8f5161b437eae44d8f59bc6d95f102c282d2693d4d9c69d6f3c4d26c2"
+      "sha256": "9ce94cffbc17707815877b1a8228c0aec322fa55198a3ab3094a5c4709f3781d"
     }
   },
   "assetIds": [
