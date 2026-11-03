@@ -13,11 +13,11 @@
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "c930f2c730b39dbab1c809fad930ae0e18598ad280fb3ab133c85ead72ad3ee7"
+      "sha256": "4d20c635a78b427407709a041fdbdbae1f04b88ad7a7891d28c218d19d629c03"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "87d24f424f59c7b0653d6db3c6170d44af8b07f9c4e699f39a498ecea2189e87"
+      "sha256": "bea25ee538ad58da36c985db51e4964dc5b5fdd8bdf66b4b3e5653f99cd03c1a"
     }
   },
   "assetIds": [
