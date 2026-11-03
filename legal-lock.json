@@ -1,23 +1,23 @@
 {
   "contractVersion": "1.0.0",
-  "release": "2026-11-04.1",
+  "release": "2026-11-04.2",
   "status": "adopted",
-  "effectiveFrom": "2026-11-03T21:45:23Z",
+  "effectiveFrom": "2026-11-03T22:50:56Z",
   "approval": {
     "by": "owner",
-    "recordedAt": "2026-11-03T21:45:23Z",
-    "instruction": "7. yes",
-    "scope": "Dave's answers of 4 November 2026 to the Your Story / Stripe review sheet. Answer 2 (Your Story refund wording for the Terms, as proposed): \"Digital book (PDF): no change-of-mind refund once it has been downloaded. Printed book: you can cancel free of charge until printing starts. After that there are no change-of-mind refunds, but a faulty or damaged book is reprinted or refunded. Gift: fully refundable until the recipient accepts it, or if the link expires after 60 days without being accepted. Consumer rights (NZ Consumer Guarantees Act and Fair Trading Act) always apply.\" Answer 3: \"Remove the stale Schedule GIVE text in the Terms. It currently says BMSG 'has no bank accounts yet' and does not claim that payment collection or refunds are operational. BMSG now has a bank account and takes payments for Your Story through Stripe. Also add OurFamilyRocks.com / Your Story to the Terms' asset table where products are sold.\" Answer 7: \"YES: publish the Terms update and the Your Story page to production.\" Release 2026-11-04.1 is adopted and published on bringmesunshinegroup.com through the release scripts; the family sites stay folded (301 to bringmesunshinegroup.com)."
+    "recordedAt": "2026-11-03T22:50:56Z",
+    "instruction": "remove the Publication note; lock the T&Cs and Privacy in under BMSG; yes, publish to the live site when ready",
+    "scope": "Dave (owner), 4 November 2026, verbatim: \"remove from t&Cs 'Publication note: some service details still need confirmation or updates, including operator particulars and monitored contact routes, consent records, retention and provider practices, child safeguards, translations, hosted integrations and financial arrangements. Publishing these documents does not mean those features are operational or ready for production.' This sort of wording will turn Stripe off. Check what Stripe will see that we are negatively impacting our road to success for Stripe. These T&Cs and Privacy need to be locked in under BMSG with brands being supported/owned by BMSG as that is the structure (which is why I was looking for centralised security, legalese, payment gateways, child protection, collecting stats, comms, BMSG service monitoring, CRM etc). We will go to a legal company once we have critical sales mass with YS.\" Production publication, Dave 4 November 2026 (relayed by the coordinating session): \"yes ... to publish it to the live site when ready\". Release 2026-11-04.2 is adopted; it is published to bringmesunshinegroup.com through the release scripts after the independent review and the staging check; the brand sites stay folded (301 to bringmesunshinegroup.com) and carry the regenerated lock."
   },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "362a5172c81e8d9899024179c547601eae8f41fe61fcec71cee9cc3dba29b07e"
+      "sha256": "c930f2c730b39dbab1c809fad930ae0e18598ad280fb3ab133c85ead72ad3ee7"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "392cadc1e2d03202521e6176b12454a6234e2859420200d9c1d880da0df256b6"
+      "sha256": "87d24f424f59c7b0653d6db3c6170d44af8b07f9c4e699f39a498ecea2189e87"
     }
   },
   "assetIds": [
