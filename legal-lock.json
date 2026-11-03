@@ -1,23 +1,23 @@
 {
   "contractVersion": "1.0.0",
-  "release": "2026-11-02.1",
+  "release": "2026-11-04.1",
   "status": "adopted",
-  "effectiveFrom": "2026-11-02T05:01:38Z",
+  "effectiveFrom": "2026-11-03T21:45:23Z",
   "approval": {
     "by": "owner",
-    "recordedAt": "2026-11-02T05:01:38Z",
-    "instruction": "8 do",
-    "scope": "Dave's reply \"8 do\" (2 November 2026) to item 8: Legal draft 2026-11-02.1 (Kindness Gate wording + \"BMSG Family Chat\"): needs \"yes rename Content Guard\" (recommended) and \"adopt and publish 2026-11-02.1\". Both are approved: 'BMSG Content Guard' is renamed the Kindness Gate in the legal text, and release 2026-11-02.1 is adopted and published on bringmesunshinegroup.com, onegooddeed.com, ourfamilyrocks.com and learntoreadreadtolearn.com through the release scripts (family-site privacy/terms stay folded, 301 to bringmesunshinegroup.com)."
+    "recordedAt": "2026-11-03T21:45:23Z",
+    "instruction": "7. yes",
+    "scope": "Dave's answers of 4 November 2026 to the Your Story / Stripe review sheet. Answer 2 (Your Story refund wording for the Terms, as proposed): \"Digital book (PDF): no change-of-mind refund once it has been downloaded. Printed book: you can cancel free of charge until printing starts. After that there are no change-of-mind refunds, but a faulty or damaged book is reprinted or refunded. Gift: fully refundable until the recipient accepts it, or if the link expires after 60 days without being accepted. Consumer rights (NZ Consumer Guarantees Act and Fair Trading Act) always apply.\" Answer 3: \"Remove the stale Schedule GIVE text in the Terms. It currently says BMSG 'has no bank accounts yet' and does not claim that payment collection or refunds are operational. BMSG now has a bank account and takes payments for Your Story through Stripe. Also add OurFamilyRocks.com / Your Story to the Terms' asset table where products are sold.\" Answer 7: \"YES: publish the Terms update and the Your Story page to production.\" Release 2026-11-04.1 is adopted and published on bringmesunshinegroup.com through the release scripts; the family sites stay folded (301 to bringmesunshinegroup.com)."
   },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "5bd60fcdd6cc5844eb910767ad14218fff8f4d182ea3117605321c14711b4c91"
+      "sha256": "362a5172c81e8d9899024179c547601eae8f41fe61fcec71cee9cc3dba29b07e"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "9ce94cffbc17707815877b1a8228c0aec322fa55198a3ab3094a5c4709f3781d"
+      "sha256": "392cadc1e2d03202521e6176b12454a6234e2859420200d9c1d880da0df256b6"
     }
   },
   "assetIds": [
