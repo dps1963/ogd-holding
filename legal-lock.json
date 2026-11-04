@@ -1,23 +1,23 @@
 {
   "contractVersion": "1.0.0",
-  "release": "2026-11-04.2",
+  "release": "2026-11-04.3",
   "status": "adopted",
-  "effectiveFrom": "2026-11-03T22:50:56Z",
+  "effectiveFrom": "2026-11-04T02:20:15Z",
   "approval": {
     "by": "owner",
-    "recordedAt": "2026-11-03T22:50:56Z",
-    "instruction": "remove the Publication note; lock the T&Cs and Privacy in under BMSG; yes, publish to the live site when ready",
-    "scope": "Dave (owner), 4 November 2026, verbatim: \"remove from t&Cs 'Publication note: some service details still need confirmation or updates, including operator particulars and monitored contact routes, consent records, retention and provider practices, child safeguards, translations, hosted integrations and financial arrangements. Publishing these documents does not mean those features are operational or ready for production.' This sort of wording will turn Stripe off. Check what Stripe will see that we are negatively impacting our road to success for Stripe. These T&Cs and Privacy need to be locked in under BMSG with brands being supported/owned by BMSG as that is the structure (which is why I was looking for centralised security, legalese, payment gateways, child protection, collecting stats, comms, BMSG service monitoring, CRM etc). We will go to a legal company once we have critical sales mass with YS.\" Production publication, Dave 4 November 2026 (relayed by the coordinating session): \"yes ... to publish it to the live site when ready\". Release 2026-11-04.2 is adopted; it is published to bringmesunshinegroup.com through the release scripts after the independent review and the staging check; the brand sites stay folded (301 to bringmesunshinegroup.com) and carry the regenerated lock."
+    "recordedAt": "2026-11-04T02:20:15Z",
+    "instruction": "yes 04.3: plain-word headings (no \"Schedule\" or internal codes); reworded Family Chat encryption sentence; same review, staging, file-by-file diff and rollback as 2026-11-04.2; then publish live",
+    "scope": "Dave (owner), 4 November 2026, verbatim: \"yes 04.3\" (relayed by the coordinating session), answering the proposal: (1) headings in plain words, removing \"Schedule\" and the internal codes; (2) reword the Family Chat encryption sentence; (3) the same review, staging, file-by-file diff and rollback as the previous release; then publish live. Release 2026-11-04.3 is adopted; it is published to bringmesunshinegroup.com through the release scripts after the independent review and the staging check; the brand sites stay folded (301 to bringmesunshinegroup.com) and carry the regenerated lock."
   },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "4d20c635a78b427407709a041fdbdbae1f04b88ad7a7891d28c218d19d629c03"
+      "sha256": "85215734cf688be9e722785c03cd6f95c831eecbfbddb4f333b798d5202fcb31"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "bea25ee538ad58da36c985db51e4964dc5b5fdd8bdf66b4b3e5653f99cd03c1a"
+      "sha256": "e1b93f704aabbd13784d1620c6df2d8b979698fe256f959fbe07250659ebd4c9"
     }
   },
   "assetIds": [
